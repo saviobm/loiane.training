@@ -1,0 +1,24 @@
+<section class="property-binding">
+  <article>
+    <h3>Interpolação</h3>
+    <p>String renderizada com interpolação: {{ url }}</p>
+    <p>Resultado de 1 + 1: {{ 1 + 1 }}</p>
+    <p>Resultado do método getValor(): {{ getValor() }}</p>
+    <p>Curso Angular && getCurtirCurso(): {{ cursoAngular && getCurtirCurso() }}</p>    
+  </article>
+
+  <article>
+      <h3>Property binding</h3>
+      <p>
+        Exemplo de Interpolação
+      </p>
+      <img src="{{ urlImagem }}" />
+      <p>
+        Exemplo de Property binding [ ] os colchetes identifica um property binding
+      </p>      
+      <p>Isso:</p>
+      <img [src]="urlImagem" /> 
+      <p>é a mesma coisa disso:</p> 
+      <img bind-src="urlImagem">
+  </article>
+</section>
