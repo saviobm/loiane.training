@@ -1,0 +1,7 @@
+ES 6 ou 7 ECMA SCRIPT
+
+
+Aula 21 - Arquivos de configurações explica o significado de cada arquivo nos projeto criados com o ng new nome.do.projeto.
+
+babeljs.io
+tsc arquivo.ts compila o type script
