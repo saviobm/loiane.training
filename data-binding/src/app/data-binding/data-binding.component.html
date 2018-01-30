@@ -1,5 +1,5 @@
-<section class="property-binding">
-  <!--<article>
+<!--<section class="property-binding">
+  <article>
     <h3>Interpolação</h3>
     <p>String renderizada com interpolação: {{ url }}</p>
     <p>Resultado de 1 + 1: {{ 1 + 1 }}</p>
@@ -20,7 +20,7 @@
       <img [src]="urlImagem" /> 
       <p>é a mesma coisa disso:</p> 
       <img bind-src="urlImagem">
-  </article>-->
+  </article>
 
   <article>
     <h3>Class e Style Binding</h3>
@@ -44,6 +44,27 @@
       <div class="alert alert-danger" role="alert" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">Esse texto somente aparece em caso de erro</div>
 
     </div>
+  </article>
+</section>-->
+
+<section class="event-binding">
+
+  <article>
+  
+    <h3>Event binding</h3>  
+    <div>
+      <button class="btn btn-primary" (click)="salvar()">Salvar</button>
+    </div>
+    <br><br>
+    <input id="testeId" type="text" (keyup)="onKeyUp($event)"
+    (keyup.enter)="salvarValor(campoInput.value)"
+    (blur)="salvarValor($event.target.value)"
+    #campoInput />
+    <p>Valor Atual: {{ valorAtual }}</p>
+    <p>Valor Salvo: {{ valorSalvo }}</p>
+    <br>
+    <span (mouseover)="onMouseOverOut()" (mouseout)="onMouseOverOut()" [class.highlight]="isMouseOver">Passe o mouse sobre mim.</span>
+  
   </article>
 
 </section>

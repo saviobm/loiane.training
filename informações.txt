@@ -5,3 +5,6 @@ Aula 21 - Arquivos de configurações explica o significado de cada arquivo nos 
 
 babeljs.io
 tsc arquivo.ts compila o type script
+
+
+mdn eventos angular --> https://developer.mozilla.org/en-US/docs/Web/Events
