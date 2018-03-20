@@ -24,7 +24,7 @@
       <div>
 
           <input type="text" [(ngModel)]="pessoa.nome" />&nbsp;&nbsp;{{ pessoa.nome }}<br>
-          <input type="text" [(ngModel)]="pessoa.idade" />&nbsp;&nbsp;{{ pessoa.idade }}<br>
+          <input type="text" [(ngModel)]="pessoa.idade" id="txtIdade" (blur)="verificaIdade($event)" />&nbsp;&nbsp;{{ pessoa.idade }} &nbsp;&nbsp; {{ mensagemIdade }}<br>
           <input type="text" [(ngModel)]="pessoa.endereco.municipio" />&nbsp;&nbsp;{{ pessoa.endereco.municipio }}<br>
           <input type="text" [(ngModel)]="pessoa.endereco.uf" />&nbsp;&nbsp;{{ pessoa.endereco.uf }}
 
