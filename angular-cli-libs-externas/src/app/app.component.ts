@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
 
   list = _.map([1, 2, 3], (n) => `# ${n}`);
 
-  ngOnInit() { 
+  ngOnInit() {
 
   }
 
