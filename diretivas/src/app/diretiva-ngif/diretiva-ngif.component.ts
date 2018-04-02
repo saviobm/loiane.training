@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
 
 @Component({
   selector: 'app-diretiva-ngif',
@@ -11,9 +12,12 @@ export class DiretivaNgifComponent implements OnInit {
 
   mostrarCursos: boolean = false;
 
-  constructor() { }
+  constructor(private http: Http) {   
+
+  }
 
   ngOnInit() {
+
   }
 
   onMostrarCursos(): void {
